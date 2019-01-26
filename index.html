@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>ÎŞ±êÌâÎÄµµ</title>
+    <title>æè•Šæ˜¯ä¸ªå¤§åè›‹</title>
     <style type="text/css">
         *{ padding:0; margin:0; list-style:none; border:0;}
         .all{
@@ -26,23 +26,23 @@
         .all ol li.current{ background:yellow;}
  
         #arr {display: none;}
-        #arr span{ width:40px; height:40px; position:absolute; left:5px; top:50%; margin-top:-20px; background:#000; cursor:pointer; line-height:40px; text-align:center; font-weight:bold; font-family:'ºÚÌå'; font-size:30px; color:#fff; opacity:0.3; border:1px solid #fff;}
+        #arr span{ width:40px; height:40px; position:absolute; left:5px; top:50%; margin-top:-20px; background:#000; cursor:pointer; line-height:40px; text-align:center; font-weight:bold; font-family:'é»‘ä½“'; font-size:30px; color:#fff; opacity:0.3; border:1px solid #fff;}
         #arr #right{right:5px; left:auto;}
     </style>
  
     <script>
         window.onload = function () {
-            //ĞèÇó£ºÎŞ·ì¹ö¶¯¡£
-            //Ë¼Â·£º¸³ÖµµÚÒ»ÕÅÍ¼Æ¬·Åµ½ulµÄ×îºó£¬È»ºóµ±Í¼Æ¬ÇĞ»»µ½µÚÎåÕÅµÄÊ±ºò
-            //     Ö±½ÓÇĞ»»µÚÁùÕÂ£¬ÔÙ´Î´ÓµÚÒ»ÕÅÇĞ»»µ½µÚ¶şÕÅµÄÊ±ºòÏÈË²¼äÇĞ»»µ½
-            //     µÚÒ»ÕÅÍ¼Æ¬£¬È»ºó»¬¶¯µ½µÚ¶şÕÅ
-            //²½Öè£º
-            //1.»ñÈ¡ÊÂ¼şÔ´¼°Ïà¹ØÔªËØ¡££¨ÀÏÈı²½£©
-            //2.¸´ÖÆµÚÒ»ÕÅÍ¼Æ¬ËùÔÚµÄli,Ìí¼Óµ½ulµÄ×îºóÃæ¡£
-            //3.¸øolÖĞÌí¼Óli£¬ulÖĞµÄ¸öÊı-1¸ö£¬²¢µãÁÁµÚÒ»¸ö°´Å¥¡£
-            //4.Êó±ê·Åµ½olµÄliÉÏÇĞ»»Í¼Æ¬
-            //5.Ìí¼Ó¶¨Ê±Æ÷
-            //6.×óÓÒÇĞ»»Í¼Æ¬£¨Êó±ê·ÅÉÏÈ¥Òş²Ø£¬ÒÆ¿ªÏÔÊ¾£©
+            //éœ€æ±‚ï¼šæ— ç¼æ»šåŠ¨ã€‚
+            //æ€è·¯ï¼šèµ‹å€¼ç¬¬ä¸€å¼ å›¾ç‰‡æ”¾åˆ°ulçš„æœ€åï¼Œç„¶åå½“å›¾ç‰‡åˆ‡æ¢åˆ°ç¬¬äº”å¼ çš„æ—¶å€™
+            //     ç›´æ¥åˆ‡æ¢ç¬¬å…­ç« ï¼Œå†æ¬¡ä»ç¬¬ä¸€å¼ åˆ‡æ¢åˆ°ç¬¬äºŒå¼ çš„æ—¶å€™å…ˆç¬é—´åˆ‡æ¢åˆ°
+            //     ç¬¬ä¸€å¼ å›¾ç‰‡ï¼Œç„¶åæ»‘åŠ¨åˆ°ç¬¬äºŒå¼ 
+            //æ­¥éª¤ï¼š
+            //1.è·å–äº‹ä»¶æºåŠç›¸å…³å…ƒç´ ã€‚ï¼ˆè€ä¸‰æ­¥ï¼‰
+            //2.å¤åˆ¶ç¬¬ä¸€å¼ å›¾ç‰‡æ‰€åœ¨çš„li,æ·»åŠ åˆ°ulçš„æœ€åé¢ã€‚
+            //3.ç»™olä¸­æ·»åŠ liï¼Œulä¸­çš„ä¸ªæ•°-1ä¸ªï¼Œå¹¶ç‚¹äº®ç¬¬ä¸€ä¸ªæŒ‰é’®ã€‚
+            //4.é¼ æ ‡æ”¾åˆ°olçš„liä¸Šåˆ‡æ¢å›¾ç‰‡
+            //5.æ·»åŠ å®šæ—¶å™¨
+            //6.å·¦å³åˆ‡æ¢å›¾ç‰‡ï¼ˆé¼ æ ‡æ”¾ä¸Šå»éšè—ï¼Œç§»å¼€æ˜¾ç¤ºï¼‰
             var screen = document.getElementById("screen");
             var ul = screen.children[0];
             var ol = screen.children[1];
@@ -105,8 +105,8 @@
             divArr[1].onclick = autoPlay;
             function autoPlay() {
                 key++;
-                //µ±²»Âú×ãÏÂÃæµÄÌõ¼şÊÇÊ±ºò£¬ÂÖ²¥Í¼µ½ÁË×îºóÒ»¸öº¢×Ó£¬½øÈëÌõ¼şÖĞºó£¬Ë²ÒÆµ½
-                //µÚÒ»ÕÅ£¬¼ÌĞø¹ö¶¯¡£
+                //å½“ä¸æ»¡è¶³ä¸‹é¢çš„æ¡ä»¶æ˜¯æ—¶å€™ï¼Œè½®æ’­å›¾åˆ°äº†æœ€åä¸€ä¸ªå­©å­ï¼Œè¿›å…¥æ¡ä»¶ä¸­åï¼Œç¬ç§»åˆ°
+                //ç¬¬ä¸€å¼ ï¼Œç»§ç»­æ»šåŠ¨ã€‚
                 if(key > ul.children.length - 1) {
                     ul.style.left = 0;
                     key = 1;
@@ -152,15 +152,15 @@
  
         </ol>
         <div id="arr">
-            <span id="left"><</span>
-            <span id="right">></span>
+            <span id="left">æè•Šæ˜¯ä¸ªå¤§åè›‹</span>
+            <span id="right">æè•Šæ˜¯ä¸ªå¤§åè›‹</span>
         </div>
     </div>
 </div>
 </body>
 
 --------------------- 
-×÷Õß£ºÒÑÎª³Â¼£ 
-À´Ô´£ºCSDN 
-Ô­ÎÄ£ºhttps://blog.csdn.net/yiweichenji/article/details/79243635 
-°æÈ¨ÉùÃ÷£º±¾ÎÄÎª²©Ö÷Ô­´´ÎÄÕÂ£¬×ªÔØÇë¸½ÉÏ²©ÎÄÁ´½Ó£¡
+ä½œè€…ï¼šå·²ä¸ºé™ˆè¿¹ 
+æ¥æºï¼šCSDN 
+åŸæ–‡ï¼šhttps://blog.csdn.net/yiweichenji/article/details/79243635 
+ç‰ˆæƒå£°æ˜ï¼šæœ¬æ–‡ä¸ºåšä¸»åŸåˆ›æ–‡ç« ï¼Œè½¬è½½è¯·é™„ä¸Šåšæ–‡é“¾æ¥ï¼
