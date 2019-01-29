@@ -25,12 +25,3 @@
 .row img{
     width: 100%;
 }
-.q{
-    background: url(./../img/2019猪标志.png)no-repeat;
-    background-size: 56px 27px;
-    position: absolute;
-    width: 56px;
-    height: 27px;
-    top: 111%;
-    left: 25.5%;
-}
