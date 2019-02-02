@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>县委书记赵德志、县长郭海磊携各镇（园区）党（工）委书记给全县人民送新春祝福</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
@@ -14,8 +14,6 @@
 </head>
 
 <body style="background:#910000">
-    <div id="Div1" style="display: none"><img id="Img1" width="100%" src="./img/转发图片.jpg" style="position: absolute; top: 0; left: 0;"></div>
-    <div>
         <!-- 头图 -->
         <div class="toutu">
             <img style="width: 100%;" class="toutuguanggao" src="./img/58c845cd6299c563dd5f7b8753ccf2f.png" class="img-responsive"
@@ -166,42 +164,6 @@
     crossorigin="anonymous"></script>
 <script src="./js/layui-v2.4.5/layui/layui.js"></script>
 <script src="./js/layui-v2.4.5/layui/lay/modules/layer.js"></script>
-
-<script type="text/javascript">
-    var tit = $('#wx-title').val(); //标题
-    var img = $('#wx-img').val(); //图片
-    var con = $('#wx-con').val(); //简介
-    var link = $('#wx-link').val(); //链接
-    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-    // 发送给好友
-    WeixinJSBridge.on('menu:share:appmessage', function (argv) {
-    WeixinJSBridge.invoke('sendAppMessage', {
-    "appid": "123",
-    "img_url": img,
-    "img_width": "160",
-    "img_height": "160",
-    "link": link,
-    "desc": con,
-    "title": tit
-    }, function (res) {
-    _report('send_msg', res.err_msg);
-    })
-    });
-    // 分享到朋友圈
-    WeixinJSBridge.on('menu:share:timeline', function (argv) {
-    WeixinJSBridge.invoke('shareTimeline', {
-    "img_url": img,
-    "img_width": "160",
-    "img_height": "160",
-    "link": link,
-    "desc": con,
-    "title": tit
-    }, function (res) {
-    _report('timeline', res.err_msg);
-    });
-    });
-    }, false)
-    </script>
 <script>
 
 
